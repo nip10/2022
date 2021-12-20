@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const Container = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
-  /* max-width: ${({ theme }) => theme.sizes.maxWidth}; */
   max-width: 900px;
 `;
 

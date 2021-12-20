@@ -9,7 +9,7 @@ function Contact() {
         always open to hear about new oportunities. At this time, I&apos;m
         available for freelance work.
       </p>
-      <p>TODO: form contacto aqui</p>
+      <a href="mailto:hi@diogocardoso.dev">Say Hello!</a>
     </div>
   );
 }

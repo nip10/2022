@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const Typography = createGlobalStyle`
+const RootStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Inter:400,500,700&display=swap');
 
   p {
@@ -16,32 +16,34 @@ const Typography = createGlobalStyle`
 
   h1 {
     margin-top: 0;
-    font-size: 3.052rem;
+    font-size: ${({ theme }) => theme.fs.xxl};
   }
 
   h2 {
-    font-size: 2.441rem;
+    font-size: ${({ theme }) => theme.fs.xl};
   }
 
   h3 {
-    font-size: 1.953rem;
+    font-size: ${({ theme }) => theme.fs.lg};
   }
 
   h4 {
-    font-size: 1.563rem;
+    font-size: ${({ theme }) => theme.fs.md};
   }
 
   h5 {
-    font-size: 1.25rem;
-  }
+    font-size: ${({ theme }) => theme.fs.sm};
+    }
 
   small, .text_small {
-    font-size: 0.8rem;
+    font-size: ${({ theme }) => theme.fs.xs};
   }
 
   body {
     font-family: 'Inter', sans-serif;
+    background-color: ${({ theme }) => theme.colors.navy};
+    color: ${({ theme }) => theme.colors.slate};
   }
 `;
 
-export default Typography;
+export default RootStyles;
