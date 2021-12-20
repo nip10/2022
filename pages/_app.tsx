@@ -42,8 +42,8 @@ export default function App({ Component, pageProps }: AppProps) {
           `,
         }}
       />
-      <RootStyles />
       <ThemeProvider theme={theme}>
+        <RootStyles />
         <Component {...pageProps} />
       </ThemeProvider>
     </>
